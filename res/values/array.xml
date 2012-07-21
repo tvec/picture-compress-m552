@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quantMatrices">
+        <item>Linear Quantization Matrix</item>
+        <item >JPEG Standard Matrix</item>
+    </string-array>
+    <string-array name="quantMatricesVal">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="listLoss">
+        <item >1</item>
+        <item >2</item>
+        <item >4</item>
+    </string-array>
+    <string-array name="picColor">
+        <item >Grayscale</item>
+        <item >RGB</item>
+        <item >YUV</item>
+    </string-array>
+    <string-array name="picSelect">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    
+    
+</resources>

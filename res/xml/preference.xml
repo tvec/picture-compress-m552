@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" ><PreferenceCategory android:key="colorSel" android:title="@string/color_sel"><ListPreference android:entries="@array/picColor" android:entryValues="@array/picColor" android:key="colors" android:title="@string/colors" android:defaultValue='Grayscale'/>
+    
+</PreferenceCategory>
+
+    <PreferenceCategory android:key="matrix_selection" android:title="@string/matrix_sel">
+        <ListPreference android:key="quant_matrix" android:title="@string/matrix_type" android:entries="@array/quantMatrices" android:entryValues="@array/quantMatricesVal" android:defaultValue="0"/>
+    </PreferenceCategory><PreferenceCategory
+        android:enabled="true"
+        android:key="compressions"
+        android:selectable="true"
+        android:title="@string/compression_type" >
+        <CheckBoxPreference
+            android:key="select_dct"
+            android:title="@string/dct" />
+        <CheckBoxPreference
+            android:key="select_android"
+            android:title="@string/androids" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="compress_vals"
+        android:title="@string/compression_values" >
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/loss_param_summary"
+            android:entries="@array/listLoss"
+            android:entryValues="@array/listLoss"
+            android:key="loss_param"
+            android:title="@string/loss_param" />
+
+        <EditTextPreference
+            android:dialogMessage="@string/bitmap_val_summary"
+            android:dialogTitle="@string/droid_comp_val"
+            android:key="bitmap_val"
+            android:maxLength="2"
+            android:numeric="decimal"
+            android:title="@string/droid_comp_val" /></PreferenceCategory>
+    
+    
+    
+    
+
+</PreferenceScreen>
